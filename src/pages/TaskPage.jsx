@@ -9,7 +9,7 @@ export default function TaskPage() {
   const navigate = useNavigate();
   return (
     <div className="h-screen w-screen bg-slate-500 p-6">
-      <div className="w-[400px] space-y-4">
+      <div className="w-[400px] mx-auto space-y-4">
         <div className="flex justify-center relative">
           <button
             onClick={() => navigate(-1)}
