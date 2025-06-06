@@ -7,14 +7,14 @@ import Title from "./components/Title";
 
 function App() {
   const [tasks, setTasks] = useState(
-    JSON.parse(localStorage.getItem("tasks")) || []
+    JSON.parse(localStorage.getItem("tasks")) || [],
   );
 
   function onTaskClick(taskId) {
     setTasks((prevTasks) =>
       prevTasks.map((task) =>
-        task.id === taskId ? { ...task, isCompleted: !task.isCompleted } : task
-      )
+        task.id === taskId ? { ...task, isCompleted: !task.isCompleted } : task,
+      ),
     );
   }
 
